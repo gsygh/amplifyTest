@@ -9,7 +9,8 @@ class App extends Component {
       <div className="App">
       <header className="App-header"> />
         <button onClick={() => Auth.federatedSignIn({provider: "Google"})}>sign in with google</button>
-        <button onClick={() => Auth.federatedSignIn()}>sign in</button>
+        <button onClick={() => Auth.federatedSignIn().then(console.log("dd"))
+        }>sign in</button>
       </header>
     </div>
     );
